@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel test suite" parallel="classes" thread-count="20">
+    <parameter name="updateOnJira" value="false"/>
+    <test name="Core Part - Node - 1">
+        <classes>
+            <class name="FamilyTS.FamilyTC"/>
+        </classes>
+    </test>
+</suite>
